@@ -1,0 +1,6 @@
+framework module Pods_LQVideo {
+  umbrella header "Pods-LQVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}
