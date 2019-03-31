@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoomViewController" customModule="XMGTV" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoomViewController" customModule="LQVideo" customModuleProvider="target">
             <connections>
                 <outlet property="bgImageView" destination="mL0-zd-7mL" id="c5c-s0-nKM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="AZ5-TW-Jff"/>
@@ -36,18 +36,30 @@
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hev-yY-urS" userLabel="分享">
                             <rect key="frame" x="75" y="0.0" width="75" height="44"/>
                             <state key="normal" image="menu_btn_share"/>
+                            <connections>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="Jj5-IH-uRm"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cy-Tb-DyF" userLabel="礼物">
                             <rect key="frame" x="150" y="0.0" width="75" height="44"/>
                             <state key="normal" image="room_btn_gift"/>
+                            <connections>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="Ihg-v9-zbM"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyd-Om-uaR" userLabel="更多">
                             <rect key="frame" x="225" y="0.0" width="75" height="44"/>
                             <state key="normal" image="room_btn_more"/>
+                            <connections>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="TZ8-bx-4yN"/>
+                            </connections>
                         </button>
                         <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-MS-M0A" userLabel="星星">
                             <rect key="frame" x="300" y="0.0" width="75" height="44"/>
                             <state key="normal" image="room_btn_qfstar"/>
+                            <connections>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="7RS-Vr-F7o"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

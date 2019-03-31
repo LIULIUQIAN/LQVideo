@@ -40,6 +40,8 @@
 		92CBB40422509CC900A46D2D /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB40322509CC900A46D2D /* AnchorViewController.swift */; };
 		92CBB40B2250A5A600A46D2D /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB4072250A5A600A46D2D /* RoomViewController.swift */; };
 		92CBB40C2250A5A600A46D2D /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB4082250A5A600A46D2D /* RoomViewController.xib */; };
+		92CBB4102250ADD500A46D2D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB40E2250ADD500A46D2D /* NibLoadable.swift */; };
+		92CBB4112250ADD500A46D2D /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB40F2250ADD500A46D2D /* Emitterable.swift */; };
 		B737784CE2DC64BB5265B9F5 /* Pods_LQVideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429674250630879549AEBC5D /* Pods_LQVideoUITests.framework */; };
 		BE91CF0D7839B697A54A842D /* Pods_LQVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAAFB67544213989AF9D8BD /* Pods_LQVideoTests.framework */; };
 		C2201285EEF257D16E80F586 /* Pods_LQVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8765BDE8AA9619261B9C152 /* Pods_LQVideo.framework */; };
@@ -107,6 +109,8 @@
 		92CBB40322509CC900A46D2D /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		92CBB4072250A5A600A46D2D /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		92CBB4082250A5A600A46D2D /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
+		92CBB40E2250ADD500A46D2D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		92CBB40F2250ADD500A46D2D /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		A6C7918183F55F57F99D097D /* Pods-LQVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideo.release.xcconfig"; path = "Target Support Files/Pods-LQVideo/Pods-LQVideo.release.xcconfig"; sourceTree = "<group>"; };
 		AA4CA09F8CACBB9EBF12FAD5 /* Pods-LQVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideo.debug.xcconfig"; path = "Target Support Files/Pods-LQVideo/Pods-LQVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		DA7D8FC7BCDF1DACC7616921 /* Pods-LQVideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideoUITests.release.xcconfig"; path = "Target Support Files/Pods-LQVideoUITests/Pods-LQVideoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 		92CBB3BA224F473200A46D2D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				92CBB40D2250ADB600A46D2D /* Protocol */,
 				92CBB3E1225095DF00A46D2D /* Common */,
 				92CBB3D62250927D00A46D2D /* PageView */,
 				92CBB3CF224F58CC00A46D2D /* Controller */,
@@ -428,6 +433,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		92CBB40D2250ADB600A46D2D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				92CBB40F2250ADD500A46D2D /* Emitterable.swift */,
+				92CBB40E2250ADD500A46D2D /* NibLoadable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		98B7F4348AA278A1002908BF /* Pods */ = {
@@ -683,6 +697,7 @@
 				92CBB3DE2250944A00A46D2D /* LQContentView.swift in Sources */,
 				92CBB40422509CC900A46D2D /* AnchorViewController.swift in Sources */,
 				92CBB3D1224F58E100A46D2D /* UIColor-Extension.swift in Sources */,
+				92CBB4102250ADD500A46D2D /* NibLoadable.swift in Sources */,
 				92CBB3E02250953800A46D2D /* LQPageView.swift in Sources */,
 				92CBB402225097A000A46D2D /* NetworkTools.swift in Sources */,
 				92CBB3C2224F47D700A46D2D /* LQNavigationController.swift in Sources */,
@@ -696,6 +711,7 @@
 				92CBB3FD225096FD00A46D2D /* BaseModel.swift in Sources */,
 				92CBB3F3225096AF00A46D2D /* HomeViewCell.swift in Sources */,
 				92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */,
+				92CBB4112250ADD500A46D2D /* Emitterable.swift in Sources */,
 				92CBB3C0224F47A800A46D2D /* MainViewController.swift in Sources */,
 				92CBB3DC2250932700A46D2D /* LQTitleView.swift in Sources */,
 				92CBB3E3225095DF00A46D2D /* Const.swift in Sources */,
