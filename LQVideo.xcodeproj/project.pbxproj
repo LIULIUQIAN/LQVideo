@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9252F60A225343F0009F4CE9 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9252F608225343F0009F4CE9 /* QHSohuGifSort.plist */; };
+		9252F60B225343F0009F4CE9 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9252F609225343F0009F4CE9 /* QHNormalEmotionSort.plist */; };
+		9252F60D22534479009F4CE9 /* LQPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F60C22534479009F4CE9 /* LQPageCollectionView.swift */; };
+		9252F60F2253449E009F4CE9 /* LQPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F60E2253449E009F4CE9 /* LQPageCollectionViewLayout.swift */; };
+		9252F615225346BD009F4CE9 /* EmoticonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9252F611225346BD009F4CE9 /* EmoticonViewCell.xib */; };
+		9252F616225346BD009F4CE9 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F612225346BD009F4CE9 /* EmoticonViewCell.swift */; };
+		9252F617225346BD009F4CE9 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9252F613225346BD009F4CE9 /* ChatToolsView.xib */; };
+		9252F618225346BD009F4CE9 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F614225346BD009F4CE9 /* ChatToolsView.swift */; };
+		9252F61A225346FF009F4CE9 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F619225346FF009F4CE9 /* Emoticon.swift */; };
+		9252F61C225347D0009F4CE9 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F61B225347D0009F4CE9 /* EmoticonView.swift */; };
+		9252F61E225348CA009F4CE9 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F61D225348CA009F4CE9 /* EmoticonPackage.swift */; };
+		9252F62122534913009F4CE9 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62022534913009F4CE9 /* EmoticonViewModel.swift */; };
 		92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB387224F459C00A46D2D /* AppDelegate.swift */; };
 		92CBB38D224F459D00A46D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB38B224F459D00A46D2D /* Main.storyboard */; };
 		92CBB392224F459E00A46D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB391224F459E00A46D2D /* Assets.xcassets */; };
@@ -70,6 +82,18 @@
 		429674250630879549AEBC5D /* Pods_LQVideoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LQVideoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C33C6A7883B90546B1631E6 /* Pods-LQVideoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideoTests.debug.xcconfig"; path = "Target Support Files/Pods-LQVideoTests/Pods-LQVideoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C9F1F1700E768A93796D910 /* Pods-LQVideoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideoUITests.debug.xcconfig"; path = "Target Support Files/Pods-LQVideoUITests/Pods-LQVideoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9252F608225343F0009F4CE9 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		9252F609225343F0009F4CE9 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		9252F60C22534479009F4CE9 /* LQPageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQPageCollectionView.swift; sourceTree = "<group>"; };
+		9252F60E2253449E009F4CE9 /* LQPageCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		9252F611225346BD009F4CE9 /* EmoticonViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonViewCell.xib; sourceTree = "<group>"; };
+		9252F612225346BD009F4CE9 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		9252F613225346BD009F4CE9 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
+		9252F614225346BD009F4CE9 /* ChatToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
+		9252F619225346FF009F4CE9 /* Emoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Emoticon.swift; path = LQVideo/Classes/Live/View/ChatView/Emoticon.swift; sourceTree = SOURCE_ROOT; };
+		9252F61B225347D0009F4CE9 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		9252F61D225348CA009F4CE9 /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmoticonPackage.swift; path = LQVideo/Classes/Live/View/ChatView/EmoticonPackage.swift; sourceTree = SOURCE_ROOT; };
+		9252F62022534913009F4CE9 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		92CBB384224F459C00A46D2D /* LQVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CBB387224F459C00A46D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CBB38C224F459D00A46D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,6 +177,26 @@
 				429674250630879549AEBC5D /* Pods_LQVideoUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9252F6102253468E009F4CE9 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				9252F614225346BD009F4CE9 /* ChatToolsView.swift */,
+				9252F613225346BD009F4CE9 /* ChatToolsView.xib */,
+				9252F612225346BD009F4CE9 /* EmoticonViewCell.swift */,
+				9252F611225346BD009F4CE9 /* EmoticonViewCell.xib */,
+				9252F61B225347D0009F4CE9 /* EmoticonView.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		9252F61F22534903009F4CE9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9252F62022534913009F4CE9 /* EmoticonViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		92CBB37B224F459C00A46D2D = {
@@ -292,6 +336,8 @@
 		92CBB3D3225090C300A46D2D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9252F609225343F0009F4CE9 /* QHNormalEmotionSort.plist */,
+				9252F608225343F0009F4CE9 /* QHSohuGifSort.plist */,
 				92CBB3D4225090C300A46D2D /* types.plist */,
 			);
 			path = Resource;
@@ -304,6 +350,8 @@
 				92CBB3DB2250932700A46D2D /* LQTitleView.swift */,
 				92CBB3DD2250944A00A46D2D /* LQContentView.swift */,
 				92CBB3DF2250953800A46D2D /* LQPageView.swift */,
+				9252F60C22534479009F4CE9 /* LQPageCollectionView.swift */,
+				9252F60E2253449E009F4CE9 /* LQPageCollectionViewLayout.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -405,6 +453,7 @@
 		92CBB4052250A5A600A46D2D /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				9252F61F22534903009F4CE9 /* ViewModel */,
 				92CBB4062250A5A600A46D2D /* Controller */,
 				92CBB4092250A5A600A46D2D /* Model */,
 				92CBB40A2250A5A600A46D2D /* View */,
@@ -424,6 +473,8 @@
 		92CBB4092250A5A600A46D2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9252F619225346FF009F4CE9 /* Emoticon.swift */,
+				9252F61D225348CA009F4CE9 /* EmoticonPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -431,6 +482,7 @@
 		92CBB40A2250A5A600A46D2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9252F6102253468E009F4CE9 /* ChatView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -565,13 +617,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9252F60A225343F0009F4CE9 /* QHSohuGifSort.plist in Resources */,
 				92CBB3C6224F48C100A46D2D /* Rank.storyboard in Resources */,
 				92CBB395224F459E00A46D2D /* LaunchScreen.storyboard in Resources */,
 				92CBB3D5225090C300A46D2D /* types.plist in Resources */,
 				92CBB3F4225096AF00A46D2D /* HomeViewCell.xib in Resources */,
+				9252F615225346BD009F4CE9 /* EmoticonViewCell.xib in Resources */,
+				9252F617225346BD009F4CE9 /* ChatToolsView.xib in Resources */,
 				92CBB392224F459E00A46D2D /* Assets.xcassets in Resources */,
 				92CBB40C2250A5A600A46D2D /* RoomViewController.xib in Resources */,
 				92CBB38D224F459D00A46D2D /* Main.storyboard in Resources */,
+				9252F60B225343F0009F4CE9 /* QHNormalEmotionSort.plist in Resources */,
 				92CBB3C4224F47FD00A46D2D /* Home.storyboard in Resources */,
 				92CBB3CA224F48EC00A46D2D /* Profile.storyboard in Resources */,
 				92CBB3C8224F48D600A46D2D /* Discover.storyboard in Resources */,
@@ -694,11 +750,15 @@
 			files = (
 				92CBB3CC224F495B00A46D2D /* HomeViewController.swift in Sources */,
 				92CBB3E52250962000A46D2D /* NSDate-Extension.swift in Sources */,
+				9252F61E225348CA009F4CE9 /* EmoticonPackage.swift in Sources */,
 				92CBB3DE2250944A00A46D2D /* LQContentView.swift in Sources */,
+				9252F60F2253449E009F4CE9 /* LQPageCollectionViewLayout.swift in Sources */,
 				92CBB40422509CC900A46D2D /* AnchorViewController.swift in Sources */,
 				92CBB3D1224F58E100A46D2D /* UIColor-Extension.swift in Sources */,
+				9252F618225346BD009F4CE9 /* ChatToolsView.swift in Sources */,
 				92CBB4102250ADD500A46D2D /* NibLoadable.swift in Sources */,
 				92CBB3E02250953800A46D2D /* LQPageView.swift in Sources */,
+				9252F61C225347D0009F4CE9 /* EmoticonView.swift in Sources */,
 				92CBB402225097A000A46D2D /* NetworkTools.swift in Sources */,
 				92CBB3C2224F47D700A46D2D /* LQNavigationController.swift in Sources */,
 				92CBB3DA225092FA00A46D2D /* LQTitleStyle.swift in Sources */,
@@ -706,8 +766,11 @@
 				92CBB3F5225096AF00A46D2D /* HomeType.swift in Sources */,
 				92CBB3F6225096AF00A46D2D /* AnchorModel.swift in Sources */,
 				92CBB4002250973100A46D2D /* KingfisherExtension.swift in Sources */,
+				9252F60D22534479009F4CE9 /* LQPageCollectionView.swift in Sources */,
 				92CBB3F2225096AF00A46D2D /* WaterfallLayout.swift in Sources */,
+				9252F62122534913009F4CE9 /* EmoticonViewModel.swift in Sources */,
 				92CBB3F1225096AF00A46D2D /* HomeViewModel.swift in Sources */,
+				9252F616225346BD009F4CE9 /* EmoticonViewCell.swift in Sources */,
 				92CBB3FD225096FD00A46D2D /* BaseModel.swift in Sources */,
 				92CBB3F3225096AF00A46D2D /* HomeViewCell.swift in Sources */,
 				92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */,
@@ -715,6 +778,7 @@
 				92CBB3C0224F47A800A46D2D /* MainViewController.swift in Sources */,
 				92CBB3DC2250932700A46D2D /* LQTitleView.swift in Sources */,
 				92CBB3E3225095DF00A46D2D /* Const.swift in Sources */,
+				9252F61A225346FF009F4CE9 /* Emoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

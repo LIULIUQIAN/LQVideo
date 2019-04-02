@@ -9,7 +9,7 @@
 import UIKit
 
 protocol NibLoadable {
-    func test()
+   
 }
 
 extension NibLoadable where Self : UIView {
