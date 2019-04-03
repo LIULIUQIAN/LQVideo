@@ -25,8 +25,6 @@ extension HomeViewController{
         
     }
     private func setupNav(){
-        let logoImage = UIImage(named: "home-logo")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: logoImage, style: .plain, target: nil, action: nil)
         
         let collectImage = UIImage(named: "search_btn_follow")
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: collectImage, style: .plain, target: self, action: #selector(HomeViewController.followItemClick))
