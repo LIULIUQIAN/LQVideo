@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class KingfisherExtension: UIImageView {
+extension UIImageView {
 
     func setImage(_ URLString : String?, _ placeHolderName : String?) {
         guard let URLString = URLString else {

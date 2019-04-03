@@ -19,6 +19,13 @@
 		9252F61C225347D0009F4CE9 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F61B225347D0009F4CE9 /* EmoticonView.swift */; };
 		9252F61E225348CA009F4CE9 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F61D225348CA009F4CE9 /* EmoticonPackage.swift */; };
 		9252F62122534913009F4CE9 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62022534913009F4CE9 /* EmoticonViewModel.swift */; };
+		9252F62322545413009F4CE9 /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62222545413009F4CE9 /* GiftModel.swift */; };
+		9252F6252254543F009F4CE9 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F6242254543F009F4CE9 /* GiftPackage.swift */; };
+		9252F62B2254554D009F4CE9 /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F6272254554D009F4CE9 /* GiftListView.swift */; };
+		9252F62C2254554D009F4CE9 /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9252F6282254554D009F4CE9 /* GiftViewCell.xib */; };
+		9252F62D2254554D009F4CE9 /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9252F6292254554D009F4CE9 /* GiftListView.xib */; };
+		9252F62E2254554D009F4CE9 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62A2254554D009F4CE9 /* GiftViewCell.swift */; };
+		9252F630225457B9009F4CE9 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62F225457B9009F4CE9 /* GiftViewModel.swift */; };
 		92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB387224F459C00A46D2D /* AppDelegate.swift */; };
 		92CBB38D224F459D00A46D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB38B224F459D00A46D2D /* Main.storyboard */; };
 		92CBB392224F459E00A46D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB391224F459E00A46D2D /* Assets.xcassets */; };
@@ -94,6 +101,13 @@
 		9252F61B225347D0009F4CE9 /* EmoticonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
 		9252F61D225348CA009F4CE9 /* EmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmoticonPackage.swift; path = LQVideo/Classes/Live/View/ChatView/EmoticonPackage.swift; sourceTree = SOURCE_ROOT; };
 		9252F62022534913009F4CE9 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		9252F62222545413009F4CE9 /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftModel.swift; path = LQVideo/Classes/Live/ViewModel/GiftModel.swift; sourceTree = SOURCE_ROOT; };
+		9252F6242254543F009F4CE9 /* GiftPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftPackage.swift; path = LQVideo/Classes/Live/ViewModel/GiftPackage.swift; sourceTree = SOURCE_ROOT; };
+		9252F6272254554D009F4CE9 /* GiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		9252F6282254554D009F4CE9 /* GiftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		9252F6292254554D009F4CE9 /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
+		9252F62A2254554D009F4CE9 /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		9252F62F225457B9009F4CE9 /* GiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		92CBB384224F459C00A46D2D /* LQVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CBB387224F459C00A46D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CBB38C224F459D00A46D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -195,8 +209,20 @@
 			isa = PBXGroup;
 			children = (
 				9252F62022534913009F4CE9 /* EmoticonViewModel.swift */,
+				9252F62F225457B9009F4CE9 /* GiftViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9252F6262254550D009F4CE9 /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				9252F6272254554D009F4CE9 /* GiftListView.swift */,
+				9252F6292254554D009F4CE9 /* GiftListView.xib */,
+				9252F62A2254554D009F4CE9 /* GiftViewCell.swift */,
+				9252F6282254554D009F4CE9 /* GiftViewCell.xib */,
+			);
+			path = GiftView;
 			sourceTree = "<group>";
 		};
 		92CBB37B224F459C00A46D2D = {
@@ -475,6 +501,8 @@
 			children = (
 				9252F619225346FF009F4CE9 /* Emoticon.swift */,
 				9252F61D225348CA009F4CE9 /* EmoticonPackage.swift */,
+				9252F62222545413009F4CE9 /* GiftModel.swift */,
+				9252F6242254543F009F4CE9 /* GiftPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -482,6 +510,7 @@
 		92CBB40A2250A5A600A46D2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9252F6262254550D009F4CE9 /* GiftView */,
 				9252F6102253468E009F4CE9 /* ChatView */,
 			);
 			path = View;
@@ -619,6 +648,7 @@
 			files = (
 				9252F60A225343F0009F4CE9 /* QHSohuGifSort.plist in Resources */,
 				92CBB3C6224F48C100A46D2D /* Rank.storyboard in Resources */,
+				9252F62D2254554D009F4CE9 /* GiftListView.xib in Resources */,
 				92CBB395224F459E00A46D2D /* LaunchScreen.storyboard in Resources */,
 				92CBB3D5225090C300A46D2D /* types.plist in Resources */,
 				92CBB3F4225096AF00A46D2D /* HomeViewCell.xib in Resources */,
@@ -631,6 +661,7 @@
 				92CBB3C4224F47FD00A46D2D /* Home.storyboard in Resources */,
 				92CBB3CA224F48EC00A46D2D /* Profile.storyboard in Resources */,
 				92CBB3C8224F48D600A46D2D /* Discover.storyboard in Resources */,
+				9252F62C2254554D009F4CE9 /* GiftViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +784,7 @@
 				9252F61E225348CA009F4CE9 /* EmoticonPackage.swift in Sources */,
 				92CBB3DE2250944A00A46D2D /* LQContentView.swift in Sources */,
 				9252F60F2253449E009F4CE9 /* LQPageCollectionViewLayout.swift in Sources */,
+				9252F62322545413009F4CE9 /* GiftModel.swift in Sources */,
 				92CBB40422509CC900A46D2D /* AnchorViewController.swift in Sources */,
 				92CBB3D1224F58E100A46D2D /* UIColor-Extension.swift in Sources */,
 				9252F618225346BD009F4CE9 /* ChatToolsView.swift in Sources */,
@@ -769,14 +801,18 @@
 				9252F60D22534479009F4CE9 /* LQPageCollectionView.swift in Sources */,
 				92CBB3F2225096AF00A46D2D /* WaterfallLayout.swift in Sources */,
 				9252F62122534913009F4CE9 /* EmoticonViewModel.swift in Sources */,
+				9252F62B2254554D009F4CE9 /* GiftListView.swift in Sources */,
 				92CBB3F1225096AF00A46D2D /* HomeViewModel.swift in Sources */,
 				9252F616225346BD009F4CE9 /* EmoticonViewCell.swift in Sources */,
 				92CBB3FD225096FD00A46D2D /* BaseModel.swift in Sources */,
 				92CBB3F3225096AF00A46D2D /* HomeViewCell.swift in Sources */,
 				92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */,
 				92CBB4112250ADD500A46D2D /* Emitterable.swift in Sources */,
+				9252F62E2254554D009F4CE9 /* GiftViewCell.swift in Sources */,
 				92CBB3C0224F47A800A46D2D /* MainViewController.swift in Sources */,
 				92CBB3DC2250932700A46D2D /* LQTitleView.swift in Sources */,
+				9252F630225457B9009F4CE9 /* GiftViewModel.swift in Sources */,
+				9252F6252254543F009F4CE9 /* GiftPackage.swift in Sources */,
 				92CBB3E3225095DF00A46D2D /* Const.swift in Sources */,
 				9252F61A225346FF009F4CE9 /* Emoticon.swift in Sources */,
 			);

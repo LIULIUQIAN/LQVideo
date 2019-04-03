@@ -92,6 +92,10 @@ extension LQPageCollectionView {
     func register(nib : UINib, identifier : String) {
         collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
+    
+    func reloadData() {
+        self.collectionView.reloadData()
+    }
 }
 
 
