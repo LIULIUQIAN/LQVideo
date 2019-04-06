@@ -61,6 +61,19 @@
 		92CBB40C2250A5A600A46D2D /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB4082250A5A600A46D2D /* RoomViewController.xib */; };
 		92CBB4102250ADD500A46D2D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB40E2250ADD500A46D2D /* NibLoadable.swift */; };
 		92CBB4112250ADD500A46D2D /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB40F2250ADD500A46D2D /* Emitterable.swift */; };
+		92CFE9C922570225009F7FE4 /* HYSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9C622570225009F7FE4 /* HYSocket.swift */; };
+		92CFE9CA22570225009F7FE4 /* IMMessage.proto in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9C722570225009F7FE4 /* IMMessage.proto */; };
+		92CFE9CB22570225009F7FE4 /* IMMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9C822570225009F7FE4 /* IMMessage.pb.swift */; };
+		92CFE9D1225711B8009F7FE4 /* ChatContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92CFE9CD225711B8009F7FE4 /* ChatContentView.xib */; };
+		92CFE9D2225711B8009F7FE4 /* ChatContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92CFE9CE225711B8009F7FE4 /* ChatContentCell.xib */; };
+		92CFE9D3225711B8009F7FE4 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9CF225711B8009F7FE4 /* ChatContentView.swift */; };
+		92CFE9D4225711B8009F7FE4 /* ChatContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9D0225711B8009F7FE4 /* ChatContentCell.swift */; };
+		92CFE9D622572344009F7FE4 /* AttrStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9D522572344009F7FE4 /* AttrStringGenerator.swift */; };
+		92CFE9D922584194009F7FE4 /* HYGiftDigitLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9D822584194009F7FE4 /* HYGiftDigitLabel.swift */; };
+		92CFE9DB22584457009F7FE4 /* HYGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9DA22584457009F7FE4 /* HYGiftModel.swift */; };
+		92CFE9DE22584598009F7FE4 /* HYGiftChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9DC22584598009F7FE4 /* HYGiftChannelView.swift */; };
+		92CFE9DF22584598009F7FE4 /* HYGiftChannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92CFE9DD22584598009F7FE4 /* HYGiftChannelView.xib */; };
+		92CFE9E122584722009F7FE4 /* HYGiftContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9E022584722009F7FE4 /* HYGiftContainerView.swift */; };
 		B737784CE2DC64BB5265B9F5 /* Pods_LQVideoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429674250630879549AEBC5D /* Pods_LQVideoUITests.framework */; };
 		BE91CF0D7839B697A54A842D /* Pods_LQVideoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DAAFB67544213989AF9D8BD /* Pods_LQVideoTests.framework */; };
 		C2201285EEF257D16E80F586 /* Pods_LQVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8765BDE8AA9619261B9C152 /* Pods_LQVideo.framework */; };
@@ -149,6 +162,19 @@
 		92CBB4082250A5A600A46D2D /* RoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomViewController.xib; sourceTree = "<group>"; };
 		92CBB40E2250ADD500A46D2D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		92CBB40F2250ADD500A46D2D /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		92CFE9C622570225009F7FE4 /* HYSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSocket.swift; sourceTree = "<group>"; };
+		92CFE9C722570225009F7FE4 /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = IMMessage.proto; sourceTree = "<group>"; };
+		92CFE9C822570225009F7FE4 /* IMMessage.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMMessage.pb.swift; sourceTree = "<group>"; };
+		92CFE9CD225711B8009F7FE4 /* ChatContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatContentView.xib; sourceTree = "<group>"; };
+		92CFE9CE225711B8009F7FE4 /* ChatContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatContentCell.xib; sourceTree = "<group>"; };
+		92CFE9CF225711B8009F7FE4 /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		92CFE9D0225711B8009F7FE4 /* ChatContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentCell.swift; sourceTree = "<group>"; };
+		92CFE9D522572344009F7FE4 /* AttrStringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttrStringGenerator.swift; sourceTree = "<group>"; };
+		92CFE9D822584194009F7FE4 /* HYGiftDigitLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYGiftDigitLabel.swift; sourceTree = "<group>"; };
+		92CFE9DA22584457009F7FE4 /* HYGiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYGiftModel.swift; sourceTree = "<group>"; };
+		92CFE9DC22584598009F7FE4 /* HYGiftChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYGiftChannelView.swift; sourceTree = "<group>"; };
+		92CFE9DD22584598009F7FE4 /* HYGiftChannelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYGiftChannelView.xib; sourceTree = "<group>"; };
+		92CFE9E022584722009F7FE4 /* HYGiftContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYGiftContainerView.swift; sourceTree = "<group>"; };
 		A6C7918183F55F57F99D097D /* Pods-LQVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideo.release.xcconfig"; path = "Target Support Files/Pods-LQVideo/Pods-LQVideo.release.xcconfig"; sourceTree = "<group>"; };
 		AA4CA09F8CACBB9EBF12FAD5 /* Pods-LQVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideo.debug.xcconfig"; path = "Target Support Files/Pods-LQVideo/Pods-LQVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		DA7D8FC7BCDF1DACC7616921 /* Pods-LQVideoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQVideoUITests.release.xcconfig"; path = "Target Support Files/Pods-LQVideoUITests/Pods-LQVideoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -472,6 +498,7 @@
 			children = (
 				92CBB3FF2250973100A46D2D /* KingfisherExtension.swift */,
 				92CBB401225097A000A46D2D /* NetworkTools.swift */,
+				92CFE9D522572344009F7FE4 /* AttrStringGenerator.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -479,6 +506,7 @@
 		92CBB4052250A5A600A46D2D /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				92CFE9C522570204009F7FE4 /* HYSocket */,
 				9252F61F22534903009F4CE9 /* ViewModel */,
 				92CBB4062250A5A600A46D2D /* Controller */,
 				92CBB4092250A5A600A46D2D /* Model */,
@@ -510,6 +538,8 @@
 		92CBB40A2250A5A600A46D2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92CFE9D722584167009F7FE4 /* GiftAnimation */,
+				92CFE9CC225711B8009F7FE4 /* ChatContentView */,
 				9252F6262254550D009F4CE9 /* GiftView */,
 				9252F6102253468E009F4CE9 /* ChatView */,
 			);
@@ -523,6 +553,39 @@
 				92CBB40E2250ADD500A46D2D /* NibLoadable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		92CFE9C522570204009F7FE4 /* HYSocket */ = {
+			isa = PBXGroup;
+			children = (
+				92CFE9C622570225009F7FE4 /* HYSocket.swift */,
+				92CFE9C822570225009F7FE4 /* IMMessage.pb.swift */,
+				92CFE9C722570225009F7FE4 /* IMMessage.proto */,
+			);
+			path = HYSocket;
+			sourceTree = "<group>";
+		};
+		92CFE9CC225711B8009F7FE4 /* ChatContentView */ = {
+			isa = PBXGroup;
+			children = (
+				92CFE9CF225711B8009F7FE4 /* ChatContentView.swift */,
+				92CFE9CD225711B8009F7FE4 /* ChatContentView.xib */,
+				92CFE9D0225711B8009F7FE4 /* ChatContentCell.swift */,
+				92CFE9CE225711B8009F7FE4 /* ChatContentCell.xib */,
+			);
+			path = ChatContentView;
+			sourceTree = "<group>";
+		};
+		92CFE9D722584167009F7FE4 /* GiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				92CFE9D822584194009F7FE4 /* HYGiftDigitLabel.swift */,
+				92CFE9DA22584457009F7FE4 /* HYGiftModel.swift */,
+				92CFE9DC22584598009F7FE4 /* HYGiftChannelView.swift */,
+				92CFE9DD22584598009F7FE4 /* HYGiftChannelView.xib */,
+				92CFE9E022584722009F7FE4 /* HYGiftContainerView.swift */,
+			);
+			path = GiftAnimation;
 			sourceTree = "<group>";
 		};
 		98B7F4348AA278A1002908BF /* Pods */ = {
@@ -648,12 +711,14 @@
 			files = (
 				9252F60A225343F0009F4CE9 /* QHSohuGifSort.plist in Resources */,
 				92CBB3C6224F48C100A46D2D /* Rank.storyboard in Resources */,
+				92CFE9D1225711B8009F7FE4 /* ChatContentView.xib in Resources */,
 				9252F62D2254554D009F4CE9 /* GiftListView.xib in Resources */,
 				92CBB395224F459E00A46D2D /* LaunchScreen.storyboard in Resources */,
 				92CBB3D5225090C300A46D2D /* types.plist in Resources */,
 				92CBB3F4225096AF00A46D2D /* HomeViewCell.xib in Resources */,
 				9252F615225346BD009F4CE9 /* EmoticonViewCell.xib in Resources */,
 				9252F617225346BD009F4CE9 /* ChatToolsView.xib in Resources */,
+				92CFE9DF22584598009F7FE4 /* HYGiftChannelView.xib in Resources */,
 				92CBB392224F459E00A46D2D /* Assets.xcassets in Resources */,
 				92CBB40C2250A5A600A46D2D /* RoomViewController.xib in Resources */,
 				92CBB38D224F459D00A46D2D /* Main.storyboard in Resources */,
@@ -662,6 +727,7 @@
 				92CBB3CA224F48EC00A46D2D /* Profile.storyboard in Resources */,
 				92CBB3C8224F48D600A46D2D /* Discover.storyboard in Resources */,
 				9252F62C2254554D009F4CE9 /* GiftViewCell.xib in Resources */,
+				92CFE9D2225711B8009F7FE4 /* ChatContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +759,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-LQVideo/Pods-LQVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -700,6 +768,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -781,20 +851,26 @@
 			files = (
 				92CBB3CC224F495B00A46D2D /* HomeViewController.swift in Sources */,
 				92CBB3E52250962000A46D2D /* NSDate-Extension.swift in Sources */,
+				92CFE9CA22570225009F7FE4 /* IMMessage.proto in Sources */,
 				9252F61E225348CA009F4CE9 /* EmoticonPackage.swift in Sources */,
 				92CBB3DE2250944A00A46D2D /* LQContentView.swift in Sources */,
+				92CFE9E122584722009F7FE4 /* HYGiftContainerView.swift in Sources */,
 				9252F60F2253449E009F4CE9 /* LQPageCollectionViewLayout.swift in Sources */,
+				92CFE9CB22570225009F7FE4 /* IMMessage.pb.swift in Sources */,
 				9252F62322545413009F4CE9 /* GiftModel.swift in Sources */,
 				92CBB40422509CC900A46D2D /* AnchorViewController.swift in Sources */,
 				92CBB3D1224F58E100A46D2D /* UIColor-Extension.swift in Sources */,
 				9252F618225346BD009F4CE9 /* ChatToolsView.swift in Sources */,
+				92CFE9D4225711B8009F7FE4 /* ChatContentCell.swift in Sources */,
 				92CBB4102250ADD500A46D2D /* NibLoadable.swift in Sources */,
+				92CFE9C922570225009F7FE4 /* HYSocket.swift in Sources */,
 				92CBB3E02250953800A46D2D /* LQPageView.swift in Sources */,
 				9252F61C225347D0009F4CE9 /* EmoticonView.swift in Sources */,
 				92CBB402225097A000A46D2D /* NetworkTools.swift in Sources */,
 				92CBB3C2224F47D700A46D2D /* LQNavigationController.swift in Sources */,
 				92CBB3DA225092FA00A46D2D /* LQTitleStyle.swift in Sources */,
 				92CBB40B2250A5A600A46D2D /* RoomViewController.swift in Sources */,
+				92CFE9DB22584457009F7FE4 /* HYGiftModel.swift in Sources */,
 				92CBB3F5225096AF00A46D2D /* HomeType.swift in Sources */,
 				92CBB3F6225096AF00A46D2D /* AnchorModel.swift in Sources */,
 				92CBB4002250973100A46D2D /* KingfisherExtension.swift in Sources */,
@@ -802,18 +878,22 @@
 				92CBB3F2225096AF00A46D2D /* WaterfallLayout.swift in Sources */,
 				9252F62122534913009F4CE9 /* EmoticonViewModel.swift in Sources */,
 				9252F62B2254554D009F4CE9 /* GiftListView.swift in Sources */,
+				92CFE9DE22584598009F7FE4 /* HYGiftChannelView.swift in Sources */,
 				92CBB3F1225096AF00A46D2D /* HomeViewModel.swift in Sources */,
 				9252F616225346BD009F4CE9 /* EmoticonViewCell.swift in Sources */,
 				92CBB3FD225096FD00A46D2D /* BaseModel.swift in Sources */,
+				92CFE9D922584194009F7FE4 /* HYGiftDigitLabel.swift in Sources */,
 				92CBB3F3225096AF00A46D2D /* HomeViewCell.swift in Sources */,
 				92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */,
 				92CBB4112250ADD500A46D2D /* Emitterable.swift in Sources */,
+				92CFE9D622572344009F7FE4 /* AttrStringGenerator.swift in Sources */,
 				9252F62E2254554D009F4CE9 /* GiftViewCell.swift in Sources */,
 				92CBB3C0224F47A800A46D2D /* MainViewController.swift in Sources */,
 				92CBB3DC2250932700A46D2D /* LQTitleView.swift in Sources */,
 				9252F630225457B9009F4CE9 /* GiftViewModel.swift in Sources */,
 				9252F6252254543F009F4CE9 /* GiftPackage.swift in Sources */,
 				92CBB3E3225095DF00A46D2D /* Const.swift in Sources */,
+				92CFE9D3225711B8009F7FE4 /* ChatContentView.swift in Sources */,
 				9252F61A225346FF009F4CE9 /* Emoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

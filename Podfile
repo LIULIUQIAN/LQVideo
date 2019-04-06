@@ -7,6 +7,8 @@ target 'LQVideo' do
 
 pod 'Alamofire'
 pod 'Kingfisher'
+pod 'SwiftProtobuf'
+pod 'SwiftSocket'
 
 
   # Pods for LQVideo
