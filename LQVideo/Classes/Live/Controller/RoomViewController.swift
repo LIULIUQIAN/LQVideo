@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 private let kChatToolsViewHeight : CGFloat = 44
 private let kGiftlistViewHeight : CGFloat = kScreenH * 0.5
@@ -20,7 +21,8 @@ class RoomViewController: UIViewController,Emitterable {
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
     fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
     fileprivate lazy var chatContentView : ChatContentView = ChatContentView.loadFromNib()
-    fileprivate lazy var giftContainerView : HYGiftContainerView = HYGiftContainerView(frame: CGRect(x: 0, y: 120, width: 250, height: 90))
+    fileprivate lazy var giftContainerView : HYGiftContainerView = HYGiftContainerView(frame: CGRect(x: 0, y: 100, width: 250, height: 90))
+    fileprivate lazy var gifView : AnimatedImageView = AnimatedImageView()
     fileprivate lazy var socket : HYSocket = HYSocket(addr: "192.168.31.168", port: 8080)
     fileprivate var heartBeatTimer : Timer?
     
@@ -100,6 +102,13 @@ extension RoomViewController {
     
     fileprivate func setupGiftView(){
         view.addSubview(giftContainerView)
+        
+        gifView.contentMode = .scaleAspectFit
+        gifView.frame = CGRect(x: (kScreenW - 100)/2, y: 200, width: 100, height: 100)
+        gifView.delegate = self
+        gifView.repeatCount = .once
+        gifView.backgroundColor = UIColor.clear
+        view.addSubview(gifView)
     }
 }
 
@@ -168,8 +177,17 @@ extension RoomViewController : ChatToolsViewDelegate, GiftListViewDelegate {
     
     func giftListView(giftView: GiftListView, giftModel: GiftModel) {
         socket.sendGiftMsg(giftName: giftModel.subject, giftURL: giftModel.img2, giftCount: "1")
+        
+        //TODO -本地测试效果使用
         let gift1 = HYGiftModel(senderName: "都教授", senderURL: "icon2", giftName: giftModel.subject, giftURL: giftModel.img2)
         giftContainerView.showGiftModel(gift1)
+        
+        guard let url = URL(string: giftModel.gUrl) else {
+            return
+        }
+        let animatedImageViewResource = ImageResource(downloadURL: url, cacheKey: "\(url)-animated_imageview")
+        gifView.kf.setImage(with: animatedImageViewResource)
+        gifView.isHidden = false
     }
 }
 
@@ -213,7 +231,21 @@ extension RoomViewController : HYSocketDelegate {
         
         let gift1 = HYGiftModel(senderName: giftMsg.user.name, senderURL: "icon1", giftName: giftMsg.giftname, giftURL: giftMsg.giftURL)
         giftContainerView.showGiftModel(gift1)
+        
+        let url = URL(string: "https://raw.githubusercontent.com/onevcat/Kingfisher-TestImages/master/DemoAppImage/GIF/3.gif")!
+        
+        let animatedImageViewResource = ImageResource(downloadURL: url, cacheKey: "\(url)-animated_imageview")
+        gifView.kf.setImage(with: animatedImageViewResource)
+        gifView.isHidden = false
     }
 }
 
+// MARK:- 接受聊天服务器返回的消息
+extension RoomViewController : AnimatedImageViewDelegate{
+    
+    func animatedImageViewDidFinishAnimating(_ imageView: AnimatedImageView){
+        gifView.isHidden = true
+    }
+    
+}
 

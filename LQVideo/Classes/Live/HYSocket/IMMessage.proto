@@ -15,4 +15,5 @@ message GiftMessage {
     required string giftname = 2;
     required string giftURL = 3;
     required string giftCount = 4;
+    required string gUrl = 5;
 }
