@@ -26,6 +26,10 @@
 		9252F62D2254554D009F4CE9 /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9252F6292254554D009F4CE9 /* GiftListView.xib */; };
 		9252F62E2254554D009F4CE9 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62A2254554D009F4CE9 /* GiftViewCell.swift */; };
 		9252F630225457B9009F4CE9 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252F62F225457B9009F4CE9 /* GiftViewModel.swift */; };
+		928A430A225EDEDA0046DB0A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A4309225EDEDA0046DB0A /* libz.tbd */; };
+		928A4358225EE3E20046DB0A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A4357225EE3E20046DB0A /* libbz2.tbd */; };
+		928A4361225EE5990046DB0A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A4360225EE5990046DB0A /* MobileCoreServices.framework */; };
+		928A4370225EE68C0046DB0A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 928A436F225EE68C0046DB0A /* libc++.tbd */; };
 		92CBB388224F459C00A46D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBB387224F459C00A46D2D /* AppDelegate.swift */; };
 		92CBB38D224F459D00A46D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB38B224F459D00A46D2D /* Main.storyboard */; };
 		92CBB392224F459E00A46D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CBB391224F459E00A46D2D /* Assets.xcassets */; };
@@ -80,6 +84,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		928A437A225EEB7E0046DB0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 928A4374225EEB7E0046DB0A /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA8A1B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+		928A437C225EEB7E0046DB0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 928A4374225EEB7E0046DB0A /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5450B0431E63EA4300568494;
+			remoteInfo = IJKMediaFrameworkWithSSL;
+		};
+		928A437E225EEB7E0046DB0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 928A4374225EEB7E0046DB0A /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA941B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFrameworkTests;
+		};
 		92CBB39C224F459E00A46D2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 92CBB37C224F459C00A46D2D /* Project object */;
@@ -121,6 +146,11 @@
 		9252F6292254554D009F4CE9 /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
 		9252F62A2254554D009F4CE9 /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
 		9252F62F225457B9009F4CE9 /* GiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		928A4309225EDEDA0046DB0A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		928A4357225EE3E20046DB0A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		928A4360225EE5990046DB0A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		928A436F225EE68C0046DB0A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		928A4374225EEB7E0046DB0A /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = "../../../ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj"; sourceTree = "<group>"; };
 		92CBB384224F459C00A46D2D /* LQVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CBB387224F459C00A46D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92CBB38C224F459D00A46D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +216,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928A4370225EE68C0046DB0A /* libc++.tbd in Frameworks */,
+				928A4361225EE5990046DB0A /* MobileCoreServices.framework in Frameworks */,
+				928A4358225EE3E20046DB0A /* libbz2.tbd in Frameworks */,
+				928A430A225EDEDA0046DB0A /* libz.tbd in Frameworks */,
 				C2201285EEF257D16E80F586 /* Pods_LQVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +246,10 @@
 		550912460116521DF86151CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				928A436F225EE68C0046DB0A /* libc++.tbd */,
+				928A4360225EE5990046DB0A /* MobileCoreServices.framework */,
+				928A4357225EE3E20046DB0A /* libbz2.tbd */,
+				928A4309225EDEDA0046DB0A /* libz.tbd */,
 				E8765BDE8AA9619261B9C152 /* Pods_LQVideo.framework */,
 				0DAAFB67544213989AF9D8BD /* Pods_LQVideoTests.framework */,
 				429674250630879549AEBC5D /* Pods_LQVideoUITests.framework */,
@@ -251,6 +289,16 @@
 			path = GiftView;
 			sourceTree = "<group>";
 		};
+		928A4375225EEB7E0046DB0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				928A437B225EEB7E0046DB0A /* IJKMediaFramework.framework */,
+				928A437D225EEB7E0046DB0A /* IJKMediaFrameworkWithSSL.framework */,
+				928A437F225EEB7E0046DB0A /* IJKMediaFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		92CBB37B224F459C00A46D2D = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +324,7 @@
 		92CBB386224F459C00A46D2D /* LQVideo */ = {
 			isa = PBXGroup;
 			children = (
+				928A4374225EEB7E0046DB0A /* IJKMediaPlayer.xcodeproj */,
 				92CBB3D3225090C300A46D2D /* Resource */,
 				92CBB3B8224F471D00A46D2D /* Classes */,
 				92CBB387224F459C00A46D2D /* AppDelegate.swift */,
@@ -695,6 +744,12 @@
 			mainGroup = 92CBB37B224F459C00A46D2D;
 			productRefGroup = 92CBB385224F459C00A46D2D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 928A4375225EEB7E0046DB0A /* Products */;
+					ProjectRef = 928A4374225EEB7E0046DB0A /* IJKMediaPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				92CBB383224F459C00A46D2D /* LQVideo */,
@@ -703,6 +758,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		928A437B225EEB7E0046DB0A /* IJKMediaFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFramework.framework;
+			remoteRef = 928A437A225EEB7E0046DB0A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		928A437D225EEB7E0046DB0A /* IJKMediaFrameworkWithSSL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFrameworkWithSSL.framework;
+			remoteRef = 928A437C225EEB7E0046DB0A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		928A437F225EEB7E0046DB0A /* IJKMediaFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IJKMediaFrameworkTests.xctest;
+			remoteRef = 928A437E225EEB7E0046DB0A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		92CBB382224F459C00A46D2D /* Resources */ = {
@@ -1072,15 +1151,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8ZS8UUN27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LQVideo/Resource",
+				);
 				INFOPLIST_FILE = LQVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.LQVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1091,15 +1177,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8ZS8UUN27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LQVideo/Resource",
+				);
 				INFOPLIST_FILE = LQVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wb.LQVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};

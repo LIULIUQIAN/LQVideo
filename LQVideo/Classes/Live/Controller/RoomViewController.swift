@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import IJKMediaFramework
 
 private let kChatToolsViewHeight : CGFloat = 44
 private let kGiftlistViewHeight : CGFloat = kScreenH * 0.5
@@ -26,6 +27,8 @@ class RoomViewController: UIViewController,Emitterable {
     fileprivate lazy var socket : HYSocket = HYSocket(addr: "192.168.31.168", port: 8080)
     fileprivate var heartBeatTimer : Timer?
     
+    fileprivate var ijkPlayer : IJKFFMoviePlayerController?
+    
     // MARK: 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,8 @@ class RoomViewController: UIViewController,Emitterable {
             socket.sendJoinRoom()
             socket.delegate = self
         }
+        
+        displayLiveView("rtmp://10.123.17.147:1935/rtmplive/demo")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +62,7 @@ class RoomViewController: UIViewController,Emitterable {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         socket.sendLeaveRoom()
+        ijkPlayer?.shutdown()
     }
     
     deinit {
@@ -248,4 +254,30 @@ extension RoomViewController : AnimatedImageViewDelegate{
     }
     
 }
+
+// MARK:- 请求主播信息
+extension RoomViewController {
+    
+    fileprivate func displayLiveView(_ liveURLString : String?) {
+        // 1.获取直播的地址
+        guard let liveURLString = liveURLString else {
+            return
+        }
+        
+        // 2.使用IJKPlayer播放视频
+        let options = IJKFFOptions.byDefault()
+        options?.setOptionIntValue(1, forKey: "videotoolbox", of: kIJKFFOptionCategoryPlayer)
+        ijkPlayer = IJKFFMoviePlayerController(contentURLString: liveURLString, with: options)
+        
+        // 3.设置frame以及添加到其他View中
+        ijkPlayer?.view.frame = bgImageView.bounds
+        
+        bgImageView.addSubview(ijkPlayer!.view)
+        ijkPlayer?.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
+        // 4.开始播放
+        ijkPlayer?.prepareToPlay()
+    }
+}
+
 
