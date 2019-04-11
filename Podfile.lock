@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (4.8.1)
   - Kingfisher (4.10.1)
+  - SwiftProtobuf (1.4.0)
+  - SwiftSocket (2.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
+  - SwiftProtobuf
+  - SwiftSocket
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Kingfisher
+    - SwiftProtobuf
+    - SwiftSocket
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SwiftProtobuf: b06646ed6cdcfc3fecd074c6000fe0c413140e4f
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: 8de50f5789742aeffe16f5056fa71c1e13672d24
+PODFILE CHECKSUM: 3cd624f3bccb43b86cb28ee6b7cdbc35d71c4286
 
 COCOAPODS: 1.6.1

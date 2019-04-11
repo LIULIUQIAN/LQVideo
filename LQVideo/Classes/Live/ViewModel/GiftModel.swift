@@ -11,6 +11,7 @@ import UIKit
 class GiftModel: BaseModel {
    @objc var img2 : String = "" // 图片
    @objc var coin : Int = 0 // 价格
+   @objc var gUrl : String = "" // gif
    @objc var subject : String = "" { // 标题
         didSet {
             if subject.contains("(有声)") {
